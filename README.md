@@ -1,11 +1,12 @@
 # Matrix bot nodes for Node-RED
 
 This package contains nodes to send and receive messages as a Matrix node.
+Forked from [mlopezr/node-red-contrib-matrixbot](https://github.com/mlopezr/node-red-contrib-matrixbot)
 
 ## Quick usage guide
 
 This package adds 3 node types to Node-RED palette (Matrix section, at the bottom):
-* *Matrix sender*: sends messages from your Node-RED flow to the chatroom
+* *Matrix sender*: sends markdown formatted messages from your Node-RED flow to the chatroom
 * *Matrix receiver*: listens to messages in a chatroom and sends them to your Node-RED flow
 * *Matrix command*: listens only to messages starting with a specific command and sends them to your Node-RED flow
 
