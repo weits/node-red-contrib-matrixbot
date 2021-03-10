@@ -1,6 +1,7 @@
 # Matrix bot nodes for Node-RED
 
 This package contains nodes to send and receive messages as a Matrix node.
+
 Forked from [mlopezr/node-red-contrib-matrixbot](https://github.com/mlopezr/node-red-contrib-matrixbot)
 
 ## Quick usage guide
@@ -12,7 +13,7 @@ This package adds 3 node types to Node-RED palette (Matrix section, at the botto
 
 All of these nodes require a Matrix Configuration with the following settings:
 * *User ID*: the user ID in the matrix server, for instance @mybot:matrix.org
-* *Access token*: the access token of the user in the matrix server
+* *Access token*: the [access token](https://webapps.stackexchange.com/questions/131056/how-to-get-an-access-token-for-element-riot-matrix) of the user in the matrix server
 * *Server URL*: URL of the Matrix homeserver, e.g. https://matrix.org
 * *Room ID*: ID of the chatroom to join when starting. If no room is specified, it will automatically join any room where it is invited
 
@@ -21,12 +22,10 @@ All of these nodes require a Matrix Configuration with the following settings:
 Make sure you have Docker installed, run:
 
 ```
-git clone https://github.com/mlopezr/node-red-contrib-matrixbot.git
+git clone https://github.com/weits/node-red-contrib-matrixbot.git
 cd node-red-contrib-matrixbot
 npm install
 docker run --rm -it -p 1880:1880 --name mynodered -v `pwd`:/data/nodes nodered/node-red-docker
 ```
 
 Then open http://127.0.0.1:1880/ in a browser.
-
-![ ](https://ga-beacon.appspot.com/UA-63227151-9/README.md?pixel)
